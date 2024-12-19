@@ -12,6 +12,19 @@ npx create-next-app@latest --example https://github.com/AugustinMauroy/best-next
 - With [next-mdx-remote](https://github.com/hashicorp/next-mdx-remote) you can add mdx file to your project.
 - With [next-auth](https://next-auth.js.org/) you can add authentication to your project.
 
-# Node.js version
+## Node.js version
 
-For now this example use `22` but vercel only support `20` so you need to update the `engines` in the `package.json` file and `.nvmrc` file.
+This example/template use `22`. It's the current LTS version.
+
+## dev + build + start + test
+
+```bash
+node --run dev
+node --run build
+node --run start
+node --run test
+```
+
+### Test
+
+Test is boostrap with [node-test-runner](https://nodejs.org/docs/latest-v22.x/api/test.html) and [`nodejs-loaders`](https://github.com/nodejs-loaders/nodejs-loaders) to load the test files.
